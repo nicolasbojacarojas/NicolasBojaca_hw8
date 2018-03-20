@@ -18,6 +18,6 @@ m = 1000
 N =[10, 100, 1000]
 #Iteraciones realizadas para generar los archivos txt, que contienen los promedios dados un N. 
 for i in range(len(N)):
-	np.savetxt('sample_1_'+str(N[i]), get_mean(sample_1, N[i], m))
-	np.savetxt('sample_2_'+str(N[i]), get_mean(sample_2, N[i], m))
+	np.savetxt('sample_1_'+str(N[i])+".txt", get_mean(sample_1, N[i], m))
+	np.savetxt('sample_2_'+str(N[i])+".txt", get_mean(sample_2, N[i], m))
 
